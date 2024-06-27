@@ -1,0 +1,81 @@
+/* about.component.css */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #dfdddd;
+}
+
+.about-content {
+  line-height: 1.6;
+}
+
+.about-content p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+.about-content ul li {
+  color: #666;
+}
+/* about.component.css */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffcc66;
+}
+
+.about-container h2 {
+  color: #333;
+}
+
+.about-container p {
+  color: #666;
+  max-width: 600px;
+}
+.about-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h2 .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+.icon {
+  display: block;
+  margin: 0 auto 20px;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}

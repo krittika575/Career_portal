@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="section-title">Job Listings</h1>
+  <div *ngFor="let job of jobs" class="job-card">
+    <h3>{{ job.title }}</h3>
+    <p>{{ job.description }}</p>
+    <p><strong>Location:</strong> {{ job.location }}</p>
+    <a [routerLink]="['/job', job.id]" class="btn btn-secondary">View Job</a>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="apply-job-container">
+  <h2>Apply for {{ title }}</h2>
+  <form [formGroup]="applyForm" (ngSubmit)="apply()" class="apply-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name">
+      <div *ngIf="applyForm.get('name')?.invalid && applyForm.get('name')?.touched" class="error-message">
+        Name is required and should contain only letters and spaces.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email">
+      <div *ngIf="applyForm.get('email')?.invalid && applyForm.get('email')?.touched" class="error-message">
+        Please enter a valid email address.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number:</label>
+      <input type="text" id="mobile" formControlName="mobile">
+      <div *ngIf="applyForm.get('mobile')?.invalid && applyForm.get('mobile')?.touched" class="error-message">
+        Mobile number is required and should contain exactly 10 digits.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="resume">Resume:</label>
+      <input type="file" id="resume" (change)="onFileChange($event)">
+      <div *ngIf="applyForm.get('resume')?.invalid && applyForm.get('resume')?.touched" class="error-message">
+        Please upload your resume.
+      </div>
+    </div>
+    <button type="submit" class="btn-submit">Submit Application</button>
+  </form>
+</div>

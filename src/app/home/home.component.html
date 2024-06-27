@@ -1,0 +1,26 @@
+<div class="hero" style="background-color: #ffcc66; text-align: center; padding: 100px;">
+  <h1>Find Your Dream Job</h1>
+  <p>Discover the best opportunities tailored just for you.</p>
+  <button class="btn btn-primary view-jobs-btn" routerLink="/jobs">View Jobs</button>
+  </div>
+  
+  <div class="container">
+    
+    <div class="latest-jobs">
+      <h2 class="section-title">Latest Job Offers</h2>
+      <div class="job-cards-container">
+        <div class="job-card" *ngFor="let job of jobs.slice(0, 3)">
+          <h3>{{ job.title }}</h3>
+          <p>{{ job.description }}</p>
+          <p><strong>Location:</strong> {{ job.location }}</p>
+          <a [routerLink]="['/job', job.id]" class="btn-view-job">View Job</a>
+        </div>
+      </div>
+    </div>
+  
+    
+
+
+
+
+

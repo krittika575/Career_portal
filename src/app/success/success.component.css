@@ -1,0 +1,30 @@
+.success-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:  #e8e4dc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-container h2 {
+    color:  #131312;
+    margin-bottom: 20px;
+  }
+  
+  .btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-home:hover {
+    background-color: #2980b9;
+  }
+  
